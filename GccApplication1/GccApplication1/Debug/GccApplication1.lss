@@ -1,0 +1,542 @@
+
+GccApplication1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000002c6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000272  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002c6  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002f8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000058  00000000  00000000  00000338  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009ff  00000000  00000000  00000390  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000856  00000000  00000000  00000d8f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000445  00000000  00000000  000015e5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000078  00000000  00000000  00001a2c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000429  00000000  00000000  00001aa4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000015b  00000000  00000000  00001ecd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  00002028  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	d8 d0       	rcall	.+432    	; 0x24a <main>
+  9a:	e9 c0       	rjmp	.+466    	; 0x26e <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <PIN_READ>:
+
+
+char PIN_READ(char PORT_NO,int PIN_NO)
+
+{
+	switch(PORT_NO) {
+  9e:	81 34       	cpi	r24, 0x41	; 65
+  a0:	19 f0       	breq	.+6      	; 0xa8 <PIN_READ+0xa>
+  a2:	83 34       	cpi	r24, 0x43	; 67
+  a4:	41 f1       	breq	.+80     	; 0xf6 <PIN_READ+0x58>
+  a6:	44 c0       	rjmp	.+136    	; 0x130 <PIN_READ+0x92>
+		case 'A':
+		if((DDRA &= (1<<PIN_NO)) == 0 && (PORTA &=(1<<PIN_NO )) !=0)
+  a8:	2a b3       	in	r18, 0x1a	; 26
+  aa:	81 e0       	ldi	r24, 0x01	; 1
+  ac:	90 e0       	ldi	r25, 0x00	; 0
+  ae:	06 2e       	mov	r0, r22
+  b0:	02 c0       	rjmp	.+4      	; 0xb6 <PIN_READ+0x18>
+  b2:	88 0f       	add	r24, r24
+  b4:	99 1f       	adc	r25, r25
+  b6:	0a 94       	dec	r0
+  b8:	e2 f7       	brpl	.-8      	; 0xb2 <PIN_READ+0x14>
+  ba:	28 23       	and	r18, r24
+  bc:	2a bb       	out	0x1a, r18	; 26
+  be:	21 11       	cpse	r18, r1
+  c0:	1a c0       	rjmp	.+52     	; 0xf6 <PIN_READ+0x58>
+  c2:	2b b3       	in	r18, 0x1b	; 27
+  c4:	28 23       	and	r18, r24
+  c6:	2b bb       	out	0x1b, r18	; 27
+  c8:	22 23       	and	r18, r18
+  ca:	a9 f0       	breq	.+42     	; 0xf6 <PIN_READ+0x58>
+		{
+			
+			if( (PINA &= (1<<PIN_NO))!=0 )
+  cc:	29 b3       	in	r18, 0x19	; 25
+  ce:	28 23       	and	r18, r24
+  d0:	29 bb       	out	0x19, r18	; 25
+  d2:	22 23       	and	r18, r18
+  d4:	29 f0       	breq	.+10     	; 0xe0 <PIN_READ+0x42>
+			{
+				DDRD=0xff;
+  d6:	2f ef       	ldi	r18, 0xFF	; 255
+  d8:	21 bb       	out	0x11, r18	; 17
+				PORTD |= (1<<0);
+  da:	22 b3       	in	r18, 0x12	; 18
+  dc:	21 60       	ori	r18, 0x01	; 1
+  de:	22 bb       	out	0x12, r18	; 18
+				
+				
+				
+			}
+			
+			if((PINA &= (1<<PIN_NO))==0 )
+  e0:	99 b3       	in	r25, 0x19	; 25
+  e2:	89 23       	and	r24, r25
+  e4:	89 bb       	out	0x19, r24	; 25
+  e6:	81 11       	cpse	r24, r1
+  e8:	23 c0       	rjmp	.+70     	; 0x130 <PIN_READ+0x92>
+			{
+				
+				DDRD=0xff;
+  ea:	8f ef       	ldi	r24, 0xFF	; 255
+  ec:	81 bb       	out	0x11, r24	; 17
+				PORTD |= (1<<1);
+  ee:	82 b3       	in	r24, 0x12	; 18
+  f0:	82 60       	ori	r24, 0x02	; 2
+  f2:	82 bb       	out	0x12, r24	; 18
+  f4:	1d c0       	rjmp	.+58     	; 0x130 <PIN_READ+0x92>
+		
+		
+		
+		
+		case 'C':
+		if( (DDRC &= (1<<PIN_NO)) ==0 &&  (PORTC &=(1<<PIN_NO ))!=0)
+  f6:	24 b3       	in	r18, 0x14	; 20
+  f8:	81 e0       	ldi	r24, 0x01	; 1
+  fa:	90 e0       	ldi	r25, 0x00	; 0
+  fc:	02 c0       	rjmp	.+4      	; 0x102 <PIN_READ+0x64>
+  fe:	88 0f       	add	r24, r24
+ 100:	99 1f       	adc	r25, r25
+ 102:	6a 95       	dec	r22
+ 104:	e2 f7       	brpl	.-8      	; 0xfe <PIN_READ+0x60>
+ 106:	28 23       	and	r18, r24
+ 108:	24 bb       	out	0x14, r18	; 20
+ 10a:	21 11       	cpse	r18, r1
+ 10c:	11 c0       	rjmp	.+34     	; 0x130 <PIN_READ+0x92>
+ 10e:	25 b3       	in	r18, 0x15	; 21
+ 110:	28 23       	and	r18, r24
+ 112:	25 bb       	out	0x15, r18	; 21
+ 114:	22 23       	and	r18, r18
+ 116:	61 f0       	breq	.+24     	; 0x130 <PIN_READ+0x92>
+		{
+			if( !(PINC &= (1<<PIN_NO)) )
+ 118:	93 b3       	in	r25, 0x13	; 19
+ 11a:	89 23       	and	r24, r25
+ 11c:	83 bb       	out	0x13, r24	; 19
+ 11e:	81 11       	cpse	r24, r1
+ 120:	08 c0       	rjmp	.+16     	; 0x132 <PIN_READ+0x94>
+			{
+				DDRD=0xff;
+ 122:	8f ef       	ldi	r24, 0xFF	; 255
+ 124:	81 bb       	out	0x11, r24	; 17
+				PORTD |= (1<<0);
+ 126:	82 b3       	in	r24, 0x12	; 18
+ 128:	81 60       	ori	r24, 0x01	; 1
+ 12a:	82 bb       	out	0x12, r24	; 18
+				return 1;
+ 12c:	81 e0       	ldi	r24, 0x01	; 1
+ 12e:	08 95       	ret
+			
+		}
+		
+		break;
+	}
+}
+ 130:	08 95       	ret
+			}
+			
+			else
+			{
+				
+				return 0;
+ 132:	80 e0       	ldi	r24, 0x00	; 0
+			
+		}
+		
+		break;
+	}
+}
+ 134:	08 95       	ret
+
+00000136 <PIN_WRITE>:
+
+int PIN_WRITE (char PORT_NO,int PIN_NO,char HIGHORLOW){
+	switch(PORT_NO){
+ 136:	81 34       	cpi	r24, 0x41	; 65
+ 138:	19 f0       	breq	.+6      	; 0x140 <PIN_WRITE+0xa>
+ 13a:	83 34       	cpi	r24, 0x43	; 67
+ 13c:	e9 f0       	breq	.+58     	; 0x178 <PIN_WRITE+0x42>
+ 13e:	34 c0       	rjmp	.+104    	; 0x1a8 <PIN_WRITE+0x72>
+		
+		case 'A' :
+		if(DDRA &= (1<<PIN_NO)){
+ 140:	2a b3       	in	r18, 0x1a	; 26
+ 142:	81 e0       	ldi	r24, 0x01	; 1
+ 144:	90 e0       	ldi	r25, 0x00	; 0
+ 146:	02 c0       	rjmp	.+4      	; 0x14c <PIN_WRITE+0x16>
+ 148:	88 0f       	add	r24, r24
+ 14a:	99 1f       	adc	r25, r25
+ 14c:	6a 95       	dec	r22
+ 14e:	e2 f7       	brpl	.-8      	; 0x148 <PIN_WRITE+0x12>
+ 150:	28 23       	and	r18, r24
+ 152:	2a bb       	out	0x1a, r18	; 26
+ 154:	22 23       	and	r18, r18
+ 156:	41 f1       	breq	.+80     	; 0x1a8 <PIN_WRITE+0x72>
+			
+			if(HIGHORLOW==1){
+ 158:	41 30       	cpi	r20, 0x01	; 1
+ 15a:	21 f4       	brne	.+8      	; 0x164 <PIN_WRITE+0x2e>
+				PORTA |= (1<<PIN_NO);
+ 15c:	9b b3       	in	r25, 0x1b	; 27
+ 15e:	89 2b       	or	r24, r25
+ 160:	8b bb       	out	0x1b, r24	; 27
+ 162:	22 c0       	rjmp	.+68     	; 0x1a8 <PIN_WRITE+0x72>
+			}
+			
+			else if(HIGHORLOW==0){
+ 164:	41 11       	cpse	r20, r1
+ 166:	05 c0       	rjmp	.+10     	; 0x172 <PIN_WRITE+0x3c>
+				
+				PORTA &=~ (1<<PIN_NO);
+ 168:	9b b3       	in	r25, 0x1b	; 27
+ 16a:	80 95       	com	r24
+ 16c:	89 23       	and	r24, r25
+ 16e:	8b bb       	out	0x1b, r24	; 27
+ 170:	1b c0       	rjmp	.+54     	; 0x1a8 <PIN_WRITE+0x72>
+			}
+			
+			else{
+				return 0;
+ 172:	80 e0       	ldi	r24, 0x00	; 0
+ 174:	90 e0       	ldi	r25, 0x00	; 0
+ 176:	08 95       	ret
+			}
+		}
+		break;
+		
+		case 'C' :
+		if(DDRC &= (1<<PIN_NO))
+ 178:	24 b3       	in	r18, 0x14	; 20
+ 17a:	81 e0       	ldi	r24, 0x01	; 1
+ 17c:	90 e0       	ldi	r25, 0x00	; 0
+ 17e:	02 c0       	rjmp	.+4      	; 0x184 <PIN_WRITE+0x4e>
+ 180:	88 0f       	add	r24, r24
+ 182:	99 1f       	adc	r25, r25
+ 184:	6a 95       	dec	r22
+ 186:	e2 f7       	brpl	.-8      	; 0x180 <PIN_WRITE+0x4a>
+ 188:	28 23       	and	r18, r24
+ 18a:	24 bb       	out	0x14, r18	; 20
+ 18c:	22 23       	and	r18, r18
+ 18e:	61 f0       	breq	.+24     	; 0x1a8 <PIN_WRITE+0x72>
+		{
+			if(HIGHORLOW==1)
+ 190:	41 30       	cpi	r20, 0x01	; 1
+ 192:	21 f4       	brne	.+8      	; 0x19c <PIN_WRITE+0x66>
+			{
+				PORTC |= (1<<PIN_NO);
+ 194:	95 b3       	in	r25, 0x15	; 21
+ 196:	89 2b       	or	r24, r25
+ 198:	85 bb       	out	0x15, r24	; 21
+ 19a:	06 c0       	rjmp	.+12     	; 0x1a8 <PIN_WRITE+0x72>
+			}
+			
+			
+			else if(HIGHORLOW==0)
+ 19c:	41 11       	cpse	r20, r1
+ 19e:	04 c0       	rjmp	.+8      	; 0x1a8 <PIN_WRITE+0x72>
+			{
+				
+				PORTC &=~ (1<<PIN_NO);
+ 1a0:	95 b3       	in	r25, 0x15	; 21
+ 1a2:	80 95       	com	r24
+ 1a4:	89 23       	and	r24, r25
+ 1a6:	85 bb       	out	0x15, r24	; 21
+		break;
+		
+		
+	}
+
+}
+ 1a8:	08 95       	ret
+
+000001aa <ERROR>:
+
+int ERROR()
+
+{
+	
+	DDRD = 0xff;
+ 1aa:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ac:	81 bb       	out	0x11, r24	; 17
+	PORTD = 0xff;
+ 1ae:	82 bb       	out	0x12, r24	; 18
+	
+	
+}
+ 1b0:	08 95       	ret
+
+000001b2 <PIN_SETTER>:
+}
+
+int PIN_SETTER (char PORT,int PIN_NO,char PIN_MODE){
+	
+	
+	switch (PIN_MODE)
+ 1b2:	44 23       	and	r20, r20
+ 1b4:	19 f0       	breq	.+6      	; 0x1bc <PIN_SETTER+0xa>
+ 1b6:	41 30       	cpi	r20, 0x01	; 1
+ 1b8:	41 f1       	breq	.+80     	; 0x20a <PIN_SETTER+0x58>
+ 1ba:	43 c0       	rjmp	.+134    	; 0x242 <PIN_SETTER+0x90>
+	{
+		case 0 :        //Setting PORTA OR PORTB as input
+		if(PORT == 'A'){
+ 1bc:	81 34       	cpi	r24, 0x41	; 65
+ 1be:	99 f4       	brne	.+38     	; 0x1e6 <PIN_SETTER+0x34>
+			
+			DDRA  &=~ (1<<PIN_NO); // Setting PORTA PINMODE AS INPUT
+ 1c0:	2a b3       	in	r18, 0x1a	; 26
+ 1c2:	81 e0       	ldi	r24, 0x01	; 1
+ 1c4:	90 e0       	ldi	r25, 0x00	; 0
+ 1c6:	02 c0       	rjmp	.+4      	; 0x1cc <PIN_SETTER+0x1a>
+ 1c8:	88 0f       	add	r24, r24
+ 1ca:	99 1f       	adc	r25, r25
+ 1cc:	6a 95       	dec	r22
+ 1ce:	e2 f7       	brpl	.-8      	; 0x1c8 <PIN_SETTER+0x16>
+ 1d0:	98 2f       	mov	r25, r24
+ 1d2:	90 95       	com	r25
+ 1d4:	92 23       	and	r25, r18
+ 1d6:	9a bb       	out	0x1a, r25	; 26
+			PORTA |= (1<<PIN_NO);
+ 1d8:	9b b3       	in	r25, 0x1b	; 27
+ 1da:	98 2b       	or	r25, r24
+ 1dc:	9b bb       	out	0x1b, r25	; 27
+			PINA |= (1<<PIN_NO);
+ 1de:	99 b3       	in	r25, 0x19	; 25
+ 1e0:	89 2b       	or	r24, r25
+ 1e2:	89 bb       	out	0x19, r24	; 25
+ 1e4:	2e c0       	rjmp	.+92     	; 0x242 <PIN_SETTER+0x90>
+		}
+		else if(PORT == 'C'){
+ 1e6:	83 34       	cpi	r24, 0x43	; 67
+ 1e8:	69 f5       	brne	.+90     	; 0x244 <PIN_SETTER+0x92>
+			DDRC &=~ (1<<PIN_NO);  // Setting PORTB PINMODE AS INPUT
+ 1ea:	24 b3       	in	r18, 0x14	; 20
+ 1ec:	81 e0       	ldi	r24, 0x01	; 1
+ 1ee:	90 e0       	ldi	r25, 0x00	; 0
+ 1f0:	02 c0       	rjmp	.+4      	; 0x1f6 <PIN_SETTER+0x44>
+ 1f2:	88 0f       	add	r24, r24
+ 1f4:	99 1f       	adc	r25, r25
+ 1f6:	6a 95       	dec	r22
+ 1f8:	e2 f7       	brpl	.-8      	; 0x1f2 <PIN_SETTER+0x40>
+ 1fa:	98 2f       	mov	r25, r24
+ 1fc:	90 95       	com	r25
+ 1fe:	92 23       	and	r25, r18
+ 200:	94 bb       	out	0x14, r25	; 20
+			PORTC |= (1<<PIN_NO);
+ 202:	95 b3       	in	r25, 0x15	; 21
+ 204:	89 2b       	or	r24, r25
+ 206:	85 bb       	out	0x15, r24	; 21
+ 208:	1c c0       	rjmp	.+56     	; 0x242 <PIN_SETTER+0x90>
+		}
+		
+		break;
+		
+		case 1 :
+		if(PORT == 'A'){
+ 20a:	81 34       	cpi	r24, 0x41	; 65
+ 20c:	59 f4       	brne	.+22     	; 0x224 <PIN_SETTER+0x72>
+			DDRA  |= (1<<PIN_NO);    // Setting PORTA PINMODE AS OUTPUT
+ 20e:	2a b3       	in	r18, 0x1a	; 26
+ 210:	81 e0       	ldi	r24, 0x01	; 1
+ 212:	90 e0       	ldi	r25, 0x00	; 0
+ 214:	02 c0       	rjmp	.+4      	; 0x21a <PIN_SETTER+0x68>
+ 216:	88 0f       	add	r24, r24
+ 218:	99 1f       	adc	r25, r25
+ 21a:	6a 95       	dec	r22
+ 21c:	e2 f7       	brpl	.-8      	; 0x216 <PIN_SETTER+0x64>
+ 21e:	82 2b       	or	r24, r18
+ 220:	8a bb       	out	0x1a, r24	; 26
+ 222:	0f c0       	rjmp	.+30     	; 0x242 <PIN_SETTER+0x90>
+			
+			
+		}
+		else if(PORT == 'C') {
+ 224:	83 34       	cpi	r24, 0x43	; 67
+ 226:	59 f4       	brne	.+22     	; 0x23e <PIN_SETTER+0x8c>
+			DDRC |= (1<<PIN_NO);  // Setting PORTC PINMODE AS OUTPUT
+ 228:	24 b3       	in	r18, 0x14	; 20
+ 22a:	81 e0       	ldi	r24, 0x01	; 1
+ 22c:	90 e0       	ldi	r25, 0x00	; 0
+ 22e:	02 c0       	rjmp	.+4      	; 0x234 <PIN_SETTER+0x82>
+ 230:	88 0f       	add	r24, r24
+ 232:	99 1f       	adc	r25, r25
+ 234:	6a 95       	dec	r22
+ 236:	e2 f7       	brpl	.-8      	; 0x230 <PIN_SETTER+0x7e>
+ 238:	82 2b       	or	r24, r18
+ 23a:	84 bb       	out	0x14, r24	; 20
+ 23c:	02 c0       	rjmp	.+4      	; 0x242 <PIN_SETTER+0x90>
+			
+		}
+		else {
+			return ERROR();
+ 23e:	b5 cf       	rjmp	.-150    	; 0x1aa <ERROR>
+ 240:	08 95       	ret
+		}
+		break;
+	}
+	
+}
+ 242:	08 95       	ret
+			DDRC &=~ (1<<PIN_NO);  // Setting PORTB PINMODE AS INPUT
+			PORTC |= (1<<PIN_NO);
+			
+		}
+		else{
+			return 0;
+ 244:	80 e0       	ldi	r24, 0x00	; 0
+ 246:	90 e0       	ldi	r25, 0x00	; 0
+			return ERROR();
+		}
+		break;
+	}
+	
+}
+ 248:	08 95       	ret
+
+0000024a <main>:
+
+int main(void)
+{
+	
+	//DDRA = 0x00; // used for the purpose of debugging when setting output
+	DDRC = 0x00;
+ 24a:	14 ba       	out	0x14, r1	; 20
+	
+	DDRA = 0xff; // used for the purpose of debugging when setting INPUT
+ 24c:	8f ef       	ldi	r24, 0xFF	; 255
+ 24e:	8a bb       	out	0x1a, r24	; 26
+	//DDRC = 0xff;
+	
+	while (1)
+	{
+		
+		PIN_SETTER('A',5,INPUT);
+ 250:	40 e0       	ldi	r20, 0x00	; 0
+ 252:	65 e0       	ldi	r22, 0x05	; 5
+ 254:	70 e0       	ldi	r23, 0x00	; 0
+ 256:	81 e4       	ldi	r24, 0x41	; 65
+ 258:	ac df       	rcall	.-168    	; 0x1b2 <PIN_SETTER>
+		//
+		//PIN_SETTER('C',7,INPUT);
+		//PIN_SETTER('C',0,OUTPUT);
+		//PIN_SETTER('C',3,OUTPUT);
+		
+		PIN_WRITE('A',5,HIGH);
+ 25a:	41 e0       	ldi	r20, 0x01	; 1
+ 25c:	65 e0       	ldi	r22, 0x05	; 5
+ 25e:	70 e0       	ldi	r23, 0x00	; 0
+ 260:	81 e4       	ldi	r24, 0x41	; 65
+ 262:	69 df       	rcall	.-302    	; 0x136 <PIN_WRITE>
+		//PORTA |= (1<<7);
+		//PIN_WRITE('A',7,LOW);
+	    PIN_READ('A',5);
+ 264:	65 e0       	ldi	r22, 0x05	; 5
+ 266:	70 e0       	ldi	r23, 0x00	; 0
+ 268:	81 e4       	ldi	r24, 0x41	; 65
+ 26a:	19 df       	rcall	.-462    	; 0x9e <PIN_READ>
+ 26c:	f1 cf       	rjmp	.-30     	; 0x250 <main+0x6>
+
+0000026e <_exit>:
+ 26e:	f8 94       	cli
+
+00000270 <__stop_program>:
+ 270:	ff cf       	rjmp	.-2      	; 0x270 <__stop_program>
